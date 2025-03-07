@@ -1,0 +1,409 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+body{
+    /* background-color:rgba(222, 221, 236); */
+    background-color:white;
+    /* color: #ffff; */
+    font-family:'Poppins',sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color:black ;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    margin:0 23px;
+    transition: all 1s ease
+}
+nav ul li a{
+    text-decoration:none ;
+    color: white;
+    transition: all 1s ease
+}
+nav ul li a:hover{
+    color:rgb(153,153,226);
+    font-size: 1.04rem;
+}
+main hr{
+    border: 0;
+    background:blueviolet;
+    height: 0.1rem;
+    margin: 60px 84px;
+}
+hr{
+    border: 0;
+    background: #837fda;
+    height: 1.4px;
+    margin: 60px 84px;
+}
+.left
+{
+    font-size: 1.5rem;
+    color: white;
+}
+.first{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 130px 0;
+    overflow: hidden;
+}
+.first > div{
+    width: 30%;
+}
+.leftsection{
+        animation: slideInLeft 2s forwards;
+    
+}
+.rightsection {
+    animation: slideInRight 2s forwards;
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+.leftsection{
+    font-size: 2.8rem;
+    margin: 30px 0;
+   }
+.rightsection img{
+    width: 80%;
+    border-radius: 50%;
+}
+.purple{
+    color: blueviolet;
+}
+.schools {
+    display: flex;
+    justify-content: space-between;
+}
+.second{
+    max-width: 80vw;
+    margin: auto;
+    height: 40vh ;
+    /* display: flex;
+    flex-wrap: wrap; */
+    /* justify-content: space-between;
+    align-items: center; */
+    /* margin-bottom: 20px; */
+}
+.second h1{
+    font-size: 1.9rem;
+    width: 100%;
+    padding-bottom: 5vh;
+}
+ /* .eduschool p{
+        font-size: 16px;
+}  */
+
+.eduschool {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; 
+}
+
+.eduschool .logo {
+    width: 80px; 
+    margin-right: 25px; 
+}
+
+.eduschool img {
+    width: 100%; 
+    margin-right: 20px;
+}
+
+.eduschool .details {
+    flex-grow: 1; 
+}
+
+.eduschool-fill {
+    width: 200px;
+}
+ .About{
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh ;  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;  
+    animation: slideInLeft 2s forwards;
+} 
+/* @keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+} */
+
+.About h1{
+    font-size: 2.5rem;
+    width: 100%;
+}
+.About p{
+    font-size: 1.2rem;
+    width: 100%;
+    display:inline;
+}
+.ab{
+    margin-bottom: 10px;
+}
+.Techskills h1{
+    font-size: 1.9rem;
+    width: 100%;
+}
+.Techskills h3{
+    font-size: 20px;
+    font-family: "Poppins";
+    width: 100%;
+}
+.Techskills{
+    max-width: 80vw;
+    margin: 30px auto;
+    height: auto ;
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: row;
+    justify-content:center;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+.skilltitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+
+}
+.skillbox:hover .skillimg {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease; 
+}
+
+.skillimg {
+    width: 60px;
+    height:60px;
+    object-fit: contain;
+    object-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.skillbox {
+    padding: 1rem;
+    color:blueviolet;
+    margin-bottom: 20px;
+}
+
+.Projects {
+    max-width: 80vw;
+    margin: auto;
+    height: auto ;  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;  
+}
+.Projects h1{
+    width: 100%;
+    font-size: 2.5rem;
+}
+
+.project1 {
+    width: 48%; 
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+
+.project1 img {
+    width: 45%;
+    margin-top: 10px;
+    height: 30vh;
+
+}
+
+.project1 p {
+    margin-top: 13px;
+    font-size: 18px;
+}
+
+.project2 {
+    width: 48%; 
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.project2 img {
+    width: 45%;
+    margin-top: 10px;
+    height: 30vh;
+}
+.project2 p {
+    margin-top: 11px;
+    font-size: 18px;
+}
+
+
+/* rgb(32, 32, 106) */
+
+.footercontainer {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+}
+footer{
+     background-color:black; /* Same color as the header */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 0; 
+}
+
+.footercontainer h2 {
+    color:white;
+}
+
+.ContactUs {
+    max-width: 80vw;
+    margin-bottom: 20px;
+    text-align: center;
+   
+}
+.ContactUs h2{
+        color:rgb(235, 235, 243) ;
+        font-size: 1.9rem;
+        width: 100%;
+}
+
+.ContactUs p {
+    font-size: 1.2rem;
+    color:white;
+}
+
+.footercontainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.soci-img {
+    width: 50px;
+    display: inline;
+    margin: 0 22px;
+}
+
+.soci-title {
+    padding: 0.8rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    color:white;
+}
+
+.soci-title-names {
+    display: flex;
+    justify-content: center;
+    color:white;
+}
+
+.soci-title-names h3 {
+    margin: 0 5px;
+}
+/* ---------------to use heading tag (presented text) as a link------------------------------------------------------------------------- */
+.link {
+    text-decoration: none;
+    color: inherit;
+     /* here we inherit the color of parent so that it doesn't change to blue color aa link */
+    font-size: inherit; 
+    font-weight: inherit; 
+}
+
+.link:hover {
+    text-decoration: none;
+}
+.abouthead{
+    text-align: center;
+}
+.abouttitle{
+    font-size: 3rem;
+    text-align: center;
+}
+.projecthead{
+    text-align: center;
+}
+.projecttitle{
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 5vh;
+}
+.skillshead{
+    text-align: center;
+}
+.skillstitle{
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 5vh;
+    font-family: "Poppins";
+}
+
+.internttitle{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    margin-bottom:10px;
+}
+.intern1,.intern2{
+    margin-bottom:20px;
+}
+.giveit,.weatherinfo{
+    margin-bottom:5px;
+}
+.tech-stack-skills{
+    margin-top: 10px;
+}
